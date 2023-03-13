@@ -16,7 +16,8 @@ class Arquivo:
         with open(self.arquivo, 'r', encoding='utf-8') as f:
             dados = f.read()
         return dados
-
+    
+    #Obtem as sequências de entrada, trata e quebra em uma lista.
     def quebraEmLista(self, dados):
         sequencias = dados.replace(' ', '').replace('\n', '').split(',')
         self.kmer = len(sequencias[0])
@@ -31,6 +32,7 @@ class Arquivo:
             f.write(dados+'\n-\n')
         return
     
+    #Salva os dados no arquivo desejado.
     def escreveArquivo(self, dados):
         with open(self.arquivo, 'w', encoding='utf-8') as f:
             f.write(dados)

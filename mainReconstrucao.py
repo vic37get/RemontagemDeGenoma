@@ -9,7 +9,7 @@ def main(teste=False, entrada=True):
         mainTesteRemontagem('Entradas/input.txt', 10000, 3, 10000, 3, 100)
     elif entrada == True:
         #mainReconstrucao('Entradas/input.txt')
-        mainReconstrucao('Entradas/Atividade_9.COMPUTACAO.PROVA.Vale 10.composicao_1_Bioinformaticas_size_30000_k_50.txt')
+        mainReconstrucao('Entradas/input.txt')
     else:
         #Quantidade de bases / Valor do K.
         GeraEntrada(10,3)
@@ -19,4 +19,4 @@ def main(teste=False, entrada=True):
 #Se teste = True: Roda a rotina de testes, com a quantidade determinada.
 #Se teste = False e entrada = True: Usa a entrada atual (input.txt) para realizar a reconstrução.
 #Se teste = False e entrada = False: Gera uma determinada entrada e reliza a reconstrução.
-main(teste=False, entrada=True)
+main(teste=True, entrada=False)

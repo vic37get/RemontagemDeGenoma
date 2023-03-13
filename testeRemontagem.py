@@ -24,8 +24,6 @@ def testeSaida(inicial, final, fita, k):
     if (sorted(resposta) == sorted(saida)):
         #Caso o mer inicial e o final da fita produzida sejam iguais aos mers iniciais e finais do grafo.
         if (inicial.nome == inicialfita and final.nome == finalfita):
-            #dadosCorretos = saidaLog(resposta, saida, 'CORRETO!')
-            #Arquivo('Saidas/logSaidaCorreto.txt').gravaArquivo(dadosCorretos)
             return True
         #Caso contrario, grava no arquivo logSaidaErrada.txt e retorna False.
         else:
